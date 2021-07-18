@@ -46,12 +46,4 @@ class BioViewController: UIViewController {
             secondLineInfoLabel.text = "Поалуйста, проверьте заполненные поля"
         }
     }
-    
-   
-
 }
-
-
-
-//person.job = BaseOfPersons.dispatch.currentJob
-//person.hobbyDetails = BaseOfPersons.dispatch.hobby

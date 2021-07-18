@@ -11,6 +11,7 @@
 		51077C7726A43E880095B77D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51077C7626A43E880095B77D /* Person.swift */; };
 		51077C7926A44F420095B77D /* BaseOfPersons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51077C7826A44F420095B77D /* BaseOfPersons.swift */; };
 		51077C7B26A45AAC0095B77D /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51077C7A26A45AAC0095B77D /* BioViewController.swift */; };
+		51077C7D26A4CF880095B77D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51077C7C26A4CF880095B77D /* ActivityViewController.swift */; };
 		5142D1BB26A3D130005F0D32 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142D1BA26A3D130005F0D32 /* WelcomeViewController.swift */; };
 		51C52FEA269E3D16009A387D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C52FE9269E3D16009A387D /* AppDelegate.swift */; };
 		51C52FEC269E3D16009A387D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C52FEB269E3D16009A387D /* SceneDelegate.swift */; };
@@ -25,6 +26,7 @@
 		51077C7626A43E880095B77D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		51077C7826A44F420095B77D /* BaseOfPersons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseOfPersons.swift; sourceTree = "<group>"; };
 		51077C7A26A45AAC0095B77D /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		51077C7C26A4CF880095B77D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		5142D1BA26A3D130005F0D32 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		51C52FE6269E3D16009A387D /* LogInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C52FE9269E3D16009A387D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				51C52FED269E3D16009A387D /* LoginViewController.swift */,
 				5142D1BA26A3D130005F0D32 /* WelcomeViewController.swift */,
 				51077C7A26A45AAC0095B77D /* BioViewController.swift */,
+				51077C7C26A4CF880095B77D /* ActivityViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				51077C7726A43E880095B77D /* Person.swift in Sources */,
 				51C52FEE269E3D16009A387D /* LoginViewController.swift in Sources */,
 				51077C7B26A45AAC0095B77D /* BioViewController.swift in Sources */,
+				51077C7D26A4CF880095B77D /* ActivityViewController.swift in Sources */,
 				5142D1BB26A3D130005F0D32 /* WelcomeViewController.swift in Sources */,
 				51C52FEA269E3D16009A387D /* AppDelegate.swift in Sources */,
 				51077C7526A43DB30095B77D /* User.swift in Sources */,

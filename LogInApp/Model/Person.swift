@@ -25,7 +25,7 @@ struct Person {
  
     static func definePerson() -> Person {
         var person = Person()
-        person.name = BaseOfPersons.name
+        person.name = BaseOfPersons.dispatch.name
         person.surname = BaseOfPersons.dispatch.surname
         person.age = BaseOfPersons.dispatch.age
         person.job = BaseOfPersons.dispatch.currentJob
