@@ -24,4 +24,6 @@ class BaseOfPersons {
     
     var currentJob = "руководитель комиссии по делам несовершеннолетних района"
     
+    var education = "юриспруденция"
+    var educationLevel = "высшее"
 }

@@ -147,7 +147,7 @@
                         <viewLayoutGuide key="safeArea" id="6y1-Xi-r3X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="More" id="n9q-XR-f4T"/>
+                    <tabBarItem key="tabBarItem" title="More" selectedImage="plus" catalog="system" id="n9q-XR-f4T"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXz-Qz-n4F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,7 +163,7 @@
                         <viewLayoutGuide key="safeArea" id="sRZ-Sj-zLX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Activity" id="Ivh-60-U9s"/>
+                    <tabBarItem key="tabBarItem" title="Activity" selectedImage="studentdesk" catalog="system" id="Ivh-60-U9s"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9XA-4g-oHj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -215,28 +215,82 @@
             </objects>
             <point key="canvasLocation" x="1858" y="78"/>
         </scene>
-        <!--Bio-->
+        <!--Bio View Controller-->
         <scene sceneID="jV4-5u-YSv">
             <objects>
-                <viewController id="mBL-p7-4Bi" sceneMemberID="viewController">
+                <viewController id="mBL-p7-4Bi" customClass="BioViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3fJ-58-aDZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="A2v-Hr-nv4">
+                                <rect key="frame" x="16" y="39" width="288" height="32"/>
+                                <segments>
+                                    <segment title="Main"/>
+                                    <segment title="Addition"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentingInfo" destination="mBL-p7-4Bi" eventType="valueChanged" id="f7y-Na-bTu"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Меня зовут ИМЯ ФАМИЛИЯ." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LF4-St-Rgx">
+                                <rect key="frame" x="20" y="112" width="280" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мне 00 лет. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtL-wn-voQ">
+                                <rect key="frame" x="20" y="158" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screenshot 2021-07-18 at 22.57.03" translatesAutoresizingMaskIntoConstraints="NO" id="Ipd-Rt-gSZ">
+                                <rect key="frame" x="16" y="255" width="288" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ipd-Rt-gSZ" secondAttribute="height" multiplier="6:5" id="cgh-h9-3Eh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Jyc-gH-Mdw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xtL-wn-voQ" firstAttribute="leading" secondItem="Jyc-gH-Mdw" secondAttribute="leading" constant="20" id="2JI-sn-ggw"/>
+                            <constraint firstItem="Jyc-gH-Mdw" firstAttribute="trailing" secondItem="A2v-Hr-nv4" secondAttribute="trailing" constant="16" id="Ars-Uk-sMZ"/>
+                            <constraint firstItem="LF4-St-Rgx" firstAttribute="top" secondItem="A2v-Hr-nv4" secondAttribute="bottom" constant="42" id="Gaq-w5-nZZ"/>
+                            <constraint firstItem="Jyc-gH-Mdw" firstAttribute="trailing" secondItem="Ipd-Rt-gSZ" secondAttribute="trailing" constant="16" id="K0L-wT-g3f"/>
+                            <constraint firstItem="Jyc-gH-Mdw" firstAttribute="bottom" secondItem="Ipd-Rt-gSZ" secondAttribute="bottom" constant="24" id="Rpp-fs-RNd"/>
+                            <constraint firstItem="A2v-Hr-nv4" firstAttribute="leading" secondItem="Jyc-gH-Mdw" secondAttribute="leading" constant="16" id="T9p-Jo-P39"/>
+                            <constraint firstItem="Ipd-Rt-gSZ" firstAttribute="leading" secondItem="Jyc-gH-Mdw" secondAttribute="leading" constant="16" id="Tg9-Mr-1AP"/>
+                            <constraint firstAttribute="trailing" secondItem="LF4-St-Rgx" secondAttribute="trailing" constant="20" id="Y0y-Tx-adm"/>
+                            <constraint firstItem="xtL-wn-voQ" firstAttribute="top" secondItem="LF4-St-Rgx" secondAttribute="bottom" constant="25.5" id="ZZt-f4-sJC"/>
+                            <constraint firstItem="LF4-St-Rgx" firstAttribute="leading" secondItem="Jyc-gH-Mdw" secondAttribute="leading" constant="20" id="kWf-2b-8f7"/>
+                            <constraint firstItem="A2v-Hr-nv4" firstAttribute="top" secondItem="Jyc-gH-Mdw" secondAttribute="top" constant="39" id="lJK-3F-YLR"/>
+                            <constraint firstItem="Jyc-gH-Mdw" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="xtL-wn-voQ" secondAttribute="trailing" constant="202" id="vHd-O0-LAE"/>
+                            <constraint firstItem="Ipd-Rt-gSZ" firstAttribute="width" secondItem="3fJ-58-aDZ" secondAttribute="width" multiplier="0.9" id="z7c-95-ceM"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Bio" id="adH-kZ-8cN"/>
+                    <tabBarItem key="tabBarItem" selectedImage="mail" catalog="system" id="adH-kZ-8cN"/>
+                    <connections>
+                        <outlet property="firstLineInfoLabel" destination="LF4-St-Rgx" id="w0Y-iH-K4t"/>
+                        <outlet property="photo" destination="Ipd-Rt-gSZ" id="ITQ-t2-AAt"/>
+                        <outlet property="secondLineInfoLabel" destination="xtL-wn-voQ" id="b8u-Vv-3zw"/>
+                        <outlet property="segments" destination="A2v-Hr-nv4" id="Bts-0a-bov"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4MV-YJ-pqD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3548" y="-638"/>
+            <point key="canvasLocation" x="3547.5" y="-638.02816901408448"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="d7e-MB-RA5"/>
         <segue reference="PaS-ss-Stk"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Screenshot 2021-07-18 at 22.57.03" width="532" height="746"/>
+        <image name="mail" catalog="system" width="128" height="93"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="studentdesk" catalog="system" width="124" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

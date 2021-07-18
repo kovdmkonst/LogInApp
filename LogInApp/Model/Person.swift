@@ -9,28 +9,32 @@ import Foundation
 
 struct Person {
     
+    var name = ""
+    var surname = ""
+    var age = 0
     
-    var name: String
-    var surname: String
-    var age: Int
+    var hobbyDetails: [String] = []
     
-    var hobbyDetails: [String]
+    var job = ""
     
-    var job: String
+    var education = ""
+    var educationLevel = ""
     
-    var city: String
-
+    var city = ""
     
+ 
     static func definePerson() -> Person {
-        var person: Person
-        person.name = BaseOfPersons.dispatch.name
+        var person = Person()
+        person.name = BaseOfPersons.name
         person.surname = BaseOfPersons.dispatch.surname
         person.age = BaseOfPersons.dispatch.age
         person.job = BaseOfPersons.dispatch.currentJob
         person.hobbyDetails = BaseOfPersons.dispatch.hobby
         person.city = BaseOfPersons.dispatch.city
-        
+        person.education = BaseOfPersons.dispatch.education
+        person.educationLevel = BaseOfPersons.dispatch.educationLevel
+
         return person
     }
-    
+
 }
