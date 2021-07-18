@@ -13,7 +13,3 @@ struct User {
     var person: Person
 }
 
-extension User {
-    
-}
-

@@ -12,8 +12,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var userPasswordTF: UITextField!
     
-    private let user = "User"
-    private let password = "Password"
+    private let user = "1"
+    private let password = "1"
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
