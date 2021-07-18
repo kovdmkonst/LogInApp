@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5142D1BB26A3D130005F0D32 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5142D1BA26A3D130005F0D32 /* WelcomeViewController.swift */; };
 		51C52FEA269E3D16009A387D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C52FE9269E3D16009A387D /* AppDelegate.swift */; };
 		51C52FEC269E3D16009A387D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C52FEB269E3D16009A387D /* SceneDelegate.swift */; };
-		51C52FEE269E3D16009A387D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C52FED269E3D16009A387D /* ViewController.swift */; };
+		51C52FEE269E3D16009A387D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C52FED269E3D16009A387D /* LoginViewController.swift */; };
 		51C52FF1269E3D16009A387D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C52FEF269E3D16009A387D /* Main.storyboard */; };
 		51C52FF3269E3D17009A387D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51C52FF2269E3D17009A387D /* Assets.xcassets */; };
 		51C52FF6269E3D17009A387D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C52FF4269E3D17009A387D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5142D1BA26A3D130005F0D32 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		51C52FE6269E3D16009A387D /* LogInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C52FE9269E3D16009A387D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51C52FEB269E3D16009A387D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		51C52FED269E3D16009A387D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		51C52FED269E3D16009A387D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		51C52FF0269E3D16009A387D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51C52FF2269E3D17009A387D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51C52FF5269E3D17009A387D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,8 +60,9 @@
 			children = (
 				51C52FE9269E3D16009A387D /* AppDelegate.swift */,
 				51C52FEB269E3D16009A387D /* SceneDelegate.swift */,
-				51C52FED269E3D16009A387D /* ViewController.swift */,
+				51C52FED269E3D16009A387D /* LoginViewController.swift */,
 				51C52FEF269E3D16009A387D /* Main.storyboard */,
+				5142D1BA26A3D130005F0D32 /* WelcomeViewController.swift */,
 				51C52FF2269E3D17009A387D /* Assets.xcassets */,
 				51C52FF4269E3D17009A387D /* LaunchScreen.storyboard */,
 				51C52FF7269E3D17009A387D /* Info.plist */,
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51C52FEE269E3D16009A387D /* ViewController.swift in Sources */,
+				51C52FEE269E3D16009A387D /* LoginViewController.swift in Sources */,
+				5142D1BB26A3D130005F0D32 /* WelcomeViewController.swift in Sources */,
 				51C52FEA269E3D16009A387D /* AppDelegate.swift in Sources */,
 				51C52FEC269E3D16009A387D /* SceneDelegate.swift in Sources */,
 			);
@@ -295,7 +299,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = none.LogInApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = none.LogInApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
